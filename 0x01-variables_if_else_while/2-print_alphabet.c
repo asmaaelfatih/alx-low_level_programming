@@ -10,12 +10,24 @@
 
 int main(void)
 {
-char ch = 'a';
-while (ch <= 'z')
+	int a = 0;
+int b = 0;
+
+while (a < 10)
 {
-		putchar(ch);
-		ch++;
+	while (b < 10)
+	{
+		putchar(a + '0');
+		putchar(b + '0');
+		if (a != 9 && b != 9)
+		{
+putchar(',');
+			putchar(' ');
+		}
+a++;
+		b++;
 	}
-	putchar('\n');
-	return (0);
+}
+putchar('\n');
+return (0);
 }
