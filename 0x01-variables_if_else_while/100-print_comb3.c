@@ -10,20 +10,14 @@
 
 int main(void)
 {
-	int a = 0;
-	int b = 0;	while (a < 10)
+	int i, j;	for (i = 0; i <= 9; i++)
 	{
-		while (b < 10)
+		for (j = i + 1; j <= 9; j++)
 		{
-			putchar(a + '0');
-			putchar(b + '0');
-			if (a != 9 && b != 9)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			a++;
-			b++;
+			putchar('0' + i);
+			putchar('0' + j);
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
