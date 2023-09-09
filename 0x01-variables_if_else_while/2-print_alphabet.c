@@ -11,9 +11,7 @@
 int main(void)
 {
 	int a = 0;
-int b = 0;
-
-while (a < 10)
+	int b = 0;	while (a < 10)
 {
 	while (b < 10)
 	{
@@ -21,10 +19,10 @@ while (a < 10)
 		putchar(b + '0');
 		if (a != 9 && b != 9)
 		{
-putchar(',');
+			putchar(',');
 			putchar(' ');
 		}
-a++;
+		a++;
 		b++;
 	}
 }
