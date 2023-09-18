@@ -5,7 +5,7 @@
  *
  * @s: string input parameter
  *
- * Retern: convirted integer from string
+ * Return: convirted integer from string
  */
 
 int _atoi(char *s)
