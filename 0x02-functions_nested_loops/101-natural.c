@@ -3,35 +3,24 @@
 /**
 * main - Entry point
 *
-* Description: Program that prints the first 50 Fibonacci numbers
+* Description: Programme prints number less than 1024 mult by 3 or 5
 *
 * Return: This return 0
 */
 
 int main(void)
 {
-	int a = 0;
-	long b = 1;
-	long c = 2;
+	int l = 1024;
+	int s = 0;
+	int i;
 
-	while (a < 50)
+	for (i = 1; i < l; i++)
 	{
-		if (a == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
-			printf("%ld", b);
+			s += i;
 		}
-		else if (a == 1)
-		{
-			printf(", %ld", c);
-		}
-		else
-		{
-			c += b;
-			b = c - b;
-			printf(", %ld", c);
-		}
-		a++;
 	}
-	printf("\n");
+	printf("%d\n", s);
 	return (0);
 }

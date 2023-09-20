@@ -3,7 +3,7 @@
 /**
 * main - Entry point
 *
-* Description: Programe add previous to term to  Fibonacci sequence
+* Description: Program that prints the first 50 Fibonacci numbers
 *
 * Return: This return 0
 */
@@ -13,16 +13,25 @@ int main(void)
 	int a = 0;
 	long b = 1;
 	long c = 2;
-	long sum = c;
 
-	while (c + b <= 4000000)
+	while (a < 50)
 	{
-		c += b;
-		if (c % 2 == 0)
-			sum += c;
-		b = c - b;
+		if (a == 0)
+		{
+			printf("%ld", b);
+		}
+		else if (a == 1)
+		{
+			printf(", %ld", c);
+		}
+		else
+		{
+			c += b;
+			b = c - b;
+			printf(", %ld", c);
+		}
 		a++;
 	}
-	printf("%ld\n", sum);
+	printf("\n");
 	return (0);
 }
