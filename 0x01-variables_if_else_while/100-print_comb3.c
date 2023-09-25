@@ -3,21 +3,27 @@
 /**
 * main - Entry point
 *
-* Description: A C programme that print alphabet in lowercase
+* Description: prints all possible different combinations of two digits
 *
 * Return: This return 0
 */
 
 int main(void)
 {
-	int i, j;	for (i = 0; i <= 9; i++)
+	int a = 0;
+	int b = a + 1;
+
+	for (a = 0; a < 10; a++)
 	{
-		for (j = i + 1; j <= 9; j++)
+		for (b = a + 1; b < 10; b++)
 		{
-			putchar('0' + i);
-			putchar('0' + j);
-			putchar(',');
-			putchar(' ');
+			putchar('0' + a);
+			putchar('0' + b);
+			if (a != 8 || b != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
