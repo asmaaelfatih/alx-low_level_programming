@@ -8,7 +8,7 @@
 * Return: This return 0
 */
 
-nt main(void)
+int main(void)
 {
 	int a = 0;
 	int b = a + 1;
